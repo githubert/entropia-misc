@@ -51,7 +51,7 @@ func main() {
 	if time.Since(last).Hours() > float64(*timeout) {
 		if !c.Club_offen {
 			if !*dryrun {
-				cmd := exec.Command("shutdown", "-h +5")
+				cmd := exec.Command("shutdown", "-h", "+5")
 				cmd.Start()
 			} else {
 				fmt.Println("I advise against letting this machine run any longer.");
