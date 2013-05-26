@@ -25,8 +25,6 @@ void draw() {
   x = (mouseX - (mouseX % scale)) / scale;
   y = (mouseY - (mouseY % scale))/ scale;
   
-  println("x, y: " + x + " " + y);
-  
   if( mousePressed &&
      (x < w && x >= 0) &&
      (y < h && y >= 0) ) {
